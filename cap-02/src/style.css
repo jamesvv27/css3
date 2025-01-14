@@ -1,9 +1,17 @@
 @media (min-width: 600px) {
-	h1 { background: url('landscape.jpg'); }
+	h1 { 
+		background: url('landscape.jpg'); 
+	}
 }
 
-ul { overflow: hidden; }
-li { float: left; }
+ul { 
+	overflow: hidden; 
+}
+li {
+	float: left; 
+}
 @media (orientation: portrait) {
-	li { float: none; }
+	li { 
+		float: none; 
+	}
 }
