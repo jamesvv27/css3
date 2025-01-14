@@ -62,7 +62,8 @@ Adentrándonos un poco más en la sintaxis, tenemos al atributo `media`, que dec
 >
 ```
 
-Los valores más usuales para los media types son `screen` y `print`, y con esta sintaxis, podemos hacer una lista separada por comas para elegir varios media queries. Si se omite asignar un valor, el valor del media type será el predeterminado, el cual es `all`.<br>
+Los valores más usuales para los media types son `screen` y `print`, y con esta sintaxis, podemos hacer una lista separada por comas para elegir varios media queries. Si se omite asignar un valor, el valor del media type será el predeterminado, el cual es `all`.
+<br>
 Entonces, es por esto que, los siguientes ejemplos sun funcionalmente idénticos:
 
 ```css
