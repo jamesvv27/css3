@@ -1,4 +1,4 @@
-# 2 - Consultas de medios (Media Queries)
+# 2 - Media Queries
 
 Anteriormente la World Wide Web solía ser accesada únicamente mediante navegadores de escritorio hasta ahora, donde han surgido nuevos dispositivos en los cuales se puede acceder a la Web, como celulares, tabletas, y consolas. Ahora, al realizar páginas web, es necesario considerar que pueden ser visualizadas desde un monitor o desde una pantalla portátil.
 <br>
@@ -13,16 +13,16 @@ CSS ha tenido una forma para ofrecer diseños a distintos tipos de medios por un
 ```
 
 Aunque este enfoque tiene algunos errores, pues la lista de tipos es bastante amplia, y los dispositivos a los que van enfocados no los soportan.
-La solución de CSS3 a este problema es utilizar consultas de medios, definidas en el _[Modulo de Consultas de Medios](http://www.w3.org/TR/css3-mediaqueries/)_. (Media Queries Module).
-Estas consultas extienden los media types proporcionando una sintaxis de consulta que permite utilizar estilos mucho más específicos para el dispositivo del usuario.
+La solución de CSS3 a este problema es utilizar media queries, definidas en el _[Modulo de Media Queries](http://www.w3.org/TR/css3-mediaqueries/)_. (Media Queries Module).
+Estos queries extienden los media types proporcionando una sintaxis de consulta que permite utilizar estilos mucho más específicos para el dispositivo del usuario.
 
-Las consultas de medios dan la libertad de crear sitios web que sean independientes de dispositivos, dando así a los usuarios la mejor experiencia posible sin importar en dónde escojan visitar el sitio.
+Los media queries dan la libertad de crear sitios web que sean independientes de dispositivos, dando así a los usuarios la mejor experiencia posible sin importar en dónde escojan visitar el sitio.
 
 Esta característica se encuentra en estado de Recommendation del W3C, por lo que es considerado un estándar. Y ha sido implementado en navegadores principales desde Internet Explorer 9.
 
-## Ventajas de las Consultas de Medios
+## Ventajas de los Media queries
 
-Las consultas de medios pueden detectar dispositivos basandose en sus atributos, por lo que ya no se requiren de scripts para este primer paso.
+Los media queries pueden detectar dispositivos basandose en sus atributos, por lo que ya no se requiren de scripts para este primer paso.
 
 También permiten que hojas de estilo estén enfocadas directamente en un dispositivo; si un dispositivo con una pantalla pequeña se detecta, se aplicarán reglas CSS de acuerdo a ese tamaño de pantalla, saltandose elementos redundantes, usando tamaños de imagen disminuidos y haciendo el texto más claro.
 
@@ -42,7 +42,7 @@ La segunda forma es llamar a una hoja de estilos externa usando la directive `@i
 @import url('file') logic media and (expression);
 ```
 
-La tercera es usar consultas de medios en un elemento de estilo implementado o en la misma hoja de estilos con la regla extendida  `@media`:
+La tercera es usar media queries en un elemento de estilo implementado o en la misma hoja de estilos con la regla extendida  `@media`:
 
 ```css
 @media logic media and (expression) { rules }
@@ -54,7 +54,7 @@ Adentrándonos un poco más en la sintaxis, tenemos al atributo `media`, que dec
 <link href="style.css" rel="stylesheet" media="screen">
 ```
 
-Los valores más usuales para los media types son `screen` y `print`, y con esta sintaxis, podemos hacer una lista separada por comas para elegir varias consultas de medios. Si se omite asignar un valor, el valor del media type será el predeterminado, el cual es `all`.<br>
+Los valores más usuales para los media types son `screen` y `print`, y con esta sintaxis, podemos hacer una lista separada por comas para elegir varios media queries. Si se omite asignar un valor, el valor del media type será el predeterminado, el cual es `all`.<br>
 Entonces, es por esto que, los siguientes ejemplos sun funcionalmente idénticos:
 
 ```css
@@ -72,13 +72,13 @@ El primer atributo nuevo para la regla `@media` es _`logic`_, esta palabra clave
 El valor `only` es útil por si queremos ocultar la regla para navegadores antiguos que **no** soporten la sintaxis, los navegadores que **sí** soporten la sintaxis ignorarán el valor `only`.<br>
 El valor `not` es usado para negar la consulta, este se utiliza para que los estilos se apliquen si los parámetros que definimos **no** se cumplen.
 
-Si usamos _`logic`_ o _`media`_ en nuestras consultas, también tendremos que utilizar el operador `and` para combinarlos con el atributo obligatorio `expression`. Este atributo se usa para definir parámetros que ofrecen funcionalidades más allá del media type. A estos parámetros se les conoce como _media features_, y son indispensables para las consultas de medios.
+Si usamos _`logic`_ o _`media`_ en nuestros queries, también tendremos que utilizar el operador `and` para combinarlos con el atributo obligatorio `expression`. Este atributo se usa para definir parámetros que ofrecen funcionalidades más allá del media type. A estos parámetros se les conoce como _media features_, y son indispensables para los media queries.
 
 ## Media Features
 
 Los _media features_ son información sobre el dispositivo que se está usando para mostrar la página web: sus dimensiones, resolución, y demás. Esta información se usa para evaluar una _`expression`_, el resultado de esto determina las reglas de estilo que se aplicarán. Para ejemplificar, una _`expression`_ se puede interpretar como "aplicar ciertos estilos únicamente para los dispositivos con una resolución mayor a 480p".
 
-En consultas de medios, la mayoría de expresiones de los media features necesitan que se les pase un valor:
+En media queries, la mayoría de expresiones de los media features necesitan que se les pase un valor:
 
 ```cs
 @media (feature: value) { rules }
@@ -207,7 +207,7 @@ Por defecto, el valor `float` de los elementos `li` es de `left`, haciendo así 
 
 ### Relación de aspectos
 
-Se pueden crear consultas que se aplican cuando alguna relación de ancho a alto se cumple. Se puede usar `aspect-ratio` para comprobar la relación de aspecto del navegador, o `device-aspect-ratio` para ver la relación de aspecto del dispositivo:
+Se pueden crear queries que se aplican cuando alguna relación de ancho a alto se cumple. Se puede usar `aspect-ratio` para comprobar la relación de aspecto del navegador, o `device-aspect-ratio` para ver la relación de aspecto del dispositivo:
 
 ```css
 @media (aspect-ratio: horizontal/vertical) { rules }
@@ -224,7 +224,7 @@ También podemos usar las variaciones `min-` y `max-` con `aspect-ratio` y `devi
 
 ## Varios Media Features
 
-Se pueden concatenar varias consultas juntas en el mismo media type añadiendo expresiones con el operador `and`:
+Se pueden concatenar varios queries juntas en el mismo media type añadiendo expresiones con el operador `and`:
 
 ```css
 @media logic media and (expression) and (expression) { rules }
@@ -236,7 +236,7 @@ Esta sintaxis comprueba que ambas expresiones se cumplan antes de aplicar las re
 @media (max-device-aspect-ratio: 15/10) and (max-width: 800px) {...}
 ```
 
-También se puede usar una expresión condicional añadiendo consultas extra en una lista separada por comas:
+También se puede usar una expresión condicional añadiendo queries extra en una lista separada por comas:
 
 ```css
 @media logic media and (expression), logic media and (expression) { rules }
