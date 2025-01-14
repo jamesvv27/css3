@@ -33,7 +33,11 @@ Una consulta de medios asigna un parámetro (o serie de parámetros) que habilit
 La primera es llamar a una hoja de estilos externa usando el elemento `link`:
 
 ```html
-<link href="file" rel="stylesheet" media="logic media and (expression)">
+<link
+	href="file"
+	media="logic media and (expression)"
+	rel="stylesheet"
+>
 ```
 
 La segunda forma es llamar a una hoja de estilos externa usando la directive `@import`
@@ -51,7 +55,11 @@ La tercera es usar media queries en un elemento de estilo implementado o en la m
 Adentrándonos un poco más en la sintaxis, tenemos al atributo `media`, que declara los media types a los cuales se les aplican los estilos, en la etiqueta `link` en HTML lo podemos ver de la siguiente manera:
 
 ```html
-<link href="style.css" rel="stylesheet" media="screen">
+<link
+	href="style.css"
+	media="screen"
+	rel="stylesheet"
+>
 ```
 
 Los valores más usuales para los media types son `screen` y `print`, y con esta sintaxis, podemos hacer una lista separada por comas para elegir varios media queries. Si se omite asignar un valor, el valor del media type será el predeterminado, el cual es `all`.<br>
@@ -80,7 +88,7 @@ Los _media features_ son información sobre el dispositivo que se está usando p
 
 En media queries, la mayoría de expresiones de los media features necesitan que se les pase un valor:
 
-```cs
+```css
 @media (feature: value) { rules }
 ```
 
@@ -111,7 +119,9 @@ En un ejemplo más práctico, colocaremos un encabezado decorativo para navegado
 
 ```css
 @media (min-width: 400px) {
-	h1 { background: url('landscape.jpg') }
+	h1 {
+		background: url('landscape.jpg');
+	}
 }
 ```
 
@@ -157,7 +167,9 @@ También podemos detectar relaciones de pixel mínimas y máximas:
 Esto hace que colocar imagenes de fondo de alta resolución a navegdores con mayor densidad de pixeles sea más sencillo.
 
 ```css
-E { background-image: url('image-lores.png'); }
+E {
+	background-image: url('image-lores.png');
+}
 @media (min-resolution: 1.5dppx) {
 	background-image: url('image-hires.png');
 	background-size: 100% 100%;
@@ -172,9 +184,9 @@ Los media features `width` y `height` se refieren a las dimensiones de la ventan
 Para hacer el contenido legible en pantallas pequeñas, ambas dimensiones deben de coincider, esto se puede hacer añadiendo la etiqueta _meta viewport_ en la cabeza del documento de esta forma:
 
 ```html
-<meta 
-	name="viewport" 
+<meta
 	content="width=device-width"
+	name="viewport" 
 >
 ```
 
@@ -196,10 +208,16 @@ Así pues, `orientation` puede ser bastante útil para dispositivos móviles que
 Por ejemplo, podemos usar `orientation` para mostrar un menú de navegación horizontalmente o verticalmente, dependiendo de la orientación del navegador del usuario:
 
 ```css
-ul { overflow: hidden; }
-li { float: left; }
+ul {
+	overflow: hidden;
+ }
+li {
+	float: left;
+}
 @media (orientation: portrait) {
-	li { float: none; }
+	li {
+		float: none;
+	}
 }
 ```
 
@@ -253,7 +271,9 @@ El método mobile-first para crear páginas web comienza por crear una hoja de e
 
 ```css
 @media (min-width: 600px){
-	E { background-image: url('huge-image.jpg'); }
+	E {
+		background-image: url('huge-image.jpg');
+	}
 }
 ```
 
@@ -265,9 +285,9 @@ En este caso, la imagen de fondo nunca se carga en dispositivos con pantallas m�
 	rel="stylesheet"
 >
 <link 
-	href="desktop.css" 
-	rel="stylesheet" 
+	href="desktop.css"
 	media="(min-width: 600px)"
+	rel="stylesheet" 
 >
 ```
 
