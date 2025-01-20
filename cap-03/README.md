@@ -25,31 +25,31 @@ El _Selector de Atributos Simple_ aplica las reglas a los elementos que tengan e
 ```css
 a[rel] {
 	color: red;
-}
+	}
 ```
 
 Si deseamos ser más específicos, podemos usar el _Selector de Atributos por Valor Exacto_ para seleccionar únicamente los elementos que tengan exactamente el mismo valor definido:
 
 ```css
 a[rel='friend'] {
-	color: red;
-}
+		color: red;
+		}
 ```
 
 Para seleccionar elementos que tengan un valor especificado como parte de una lista, usaremos el _Selector de Atributos por Valor Parcial_.
 
 ```css
 a[rel~='friend'] { 
-	color: red;
-}
+		color: red;
+		}
 ```
 
 El _Selector de Atributos por Lenguaje_ aplica las reglas a elementos que tengan un atributo que coincida con el primer argumento en el selector. Por ejemplo, si tenemos dos elementos `<a>` que tienen un atributo `lang`, en el cual el valor en un elemento es (`es-ES`) y en el otro es (`es-MX`) y queremos seleccionar ambos, podemos usar el siguiente código:
 
 ```css
 a[lang|='es'] {
-	color: red;
-}
+		color: red;
+		}
 ```
 
 ## Nuevos Selectors de Atributos en CSS3
@@ -88,10 +88,10 @@ Al visualizar este enlace es difícil saber si se trata de un redireccionamiento
 
 ```css
 a[href^='http'] {
-	background: url('link.svg') no-repeat left center;
-	display: inline-block;
-	padding-left: 20px;
-}
+		background: url('link.svg') center left no-repeat;
+		display: inline-block;
+		padding-left: 20px;
+		}
 ```
 
 ### Ending Substring Attribute Value Selector
@@ -106,8 +106,8 @@ Aplicado en una página, podemos usar este selector para mayor claridad a enlace
 
 ```css
 a[href$='.pdf'] {
-	background-image: url('pdf.svg') 
-}
+		background-image: url('pdf.svg') 
+		}
 ```
 
 ### Arbitrary Substring Attribute Value Selector
