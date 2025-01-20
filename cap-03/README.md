@@ -24,7 +24,7 @@ El _Selector de Atributos Simple_ aplica las reglas a los elementos que tengan e
 
 ```css
 a[rel] {
-	color: red;
+	color: #ff0000;
 	}
 ```
 
@@ -32,7 +32,7 @@ Si deseamos ser más específicos, podemos usar el _Selector de Atributos por Va
 
 ```css
 a[rel='friend'] {
-		color: red;
+		color: #ff0000;
 		}
 ```
 
@@ -40,7 +40,7 @@ Para seleccionar elementos que tengan un valor especificado como parte de una li
 
 ```css
 a[rel~='friend'] { 
-		color: red;
+		color: #ff0000;
 		}
 ```
 
@@ -48,7 +48,7 @@ El _Selector de Atributos por Lenguaje_ aplica las reglas a elementos que tengan
 
 ```css
 a[lang|='es'] {
-		color: red;
+		color: #ff0000;
 		}
 ```
 
