@@ -1,0 +1,5 @@
+a[href^='http'] {
+	background: url('lincs.png') center left no-repeat;
+	display: inline-block;
+	padding-left: 20px;
+	}
