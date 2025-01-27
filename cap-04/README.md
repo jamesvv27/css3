@@ -120,7 +120,7 @@ p:nth-of-type(2n) {
 
 En el marcado de ejemplo, el elemento `<div>` tiene un total de cuatro elementos hijos, un `<h2>` y tres `<p>`. El selector `:nth-child(2n)` en la primer línea aplica negritas a cada segundo elemento hijo (en este caso, al primer y al tercer elemento `<p>`).
 <br>
-Por otro lado, el selector `:nth-of-type(2n)` ignore el `<h2>` y aplica negritas a cada segunda instancia de los tres elementos `<p>`, y en el marcado lo aplicaría únicamente al segundo párrafo.
+Por otro lado, el selector `:nth-of-type(2n)` ignora el `<h2>` y aplica negritas a cada segunda instancia de los tres elementos `<p>`, y en el marcado lo aplicaría únicamente al segundo párrafo.
 
 ### `nth-last-child()` y `nth-last-of-type()`
 
