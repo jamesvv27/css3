@@ -1,0 +1,20 @@
+p:nth-child(2n) { 
+		font-weight: bolder;
+	 	}
+
+p:only-of-type { 
+		font-style: italic; 
+		}
+		
+p:only-child { 
+		text-decoration: underline;
+		}
+		
+#e_selection::selection {
+		background-color: black;
+		color: white;
+		}
+		
+#e_target:target{
+			color: rgb(255, 0, 0);
+			}
