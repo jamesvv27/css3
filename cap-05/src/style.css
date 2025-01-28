@@ -1,0 +1,31 @@
+@font-face {
+	font-family: 'CartoonistHand';
+	src: url('SF_Cartoonist_Hand.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CartoonistHand';
+	font-style: italic;
+	src: url('SF_Cartoonist_Hand_Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'CartoonistHand';
+	font-weight: bold;
+	src: url('SF_Cartoonist_Hand_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'ChunkFiveRegular';
+	src: url('ChunkFive-Regular.otf') format('opentype');
+}
+@font-face {
+	font-family: 'AirstreamRegular';
+	src: url('Airstream.ttf') format('truetype');
+}
+h1 { 
+	font-family: ChunkFiveRegular, sans-serif;
+}
+h2 { 
+	font-family: AirstreamRegular, cursive;
+}
+p { 
+	font-family: CartoonistHand, sans-serif;
+}
