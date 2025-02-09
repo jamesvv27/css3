@@ -1,0 +1,35 @@
+h2{
+	color: rgb(255, 255, 255);
+}
+	
+h2.dynamic {
+	background:
+	url('omero.png') no-repeat 95% 85%,
+	url('omero.png') no-repeat 50% 80%,
+	url('omero.png') no-repeat 10% 100%,
+	url('casa-simpson.png') no-repeat 50% 50%;
+	background-size: auto 80%, auto 15%, auto 50%, auto;
+	
+	height: 667px;
+	width: 1000px;	
+}
+
+h2.clip {
+	background: url('casa-simpson.png') no-repeat 50% 50% #EFEFEF;
+	border-width: 20px;
+	padding: 20px;
+	
+	height: 70px;
+	width: 70px;
+}
+
+h2.brdr { 
+	background-clip: border-box;
+}
+h2.pddng {
+	background-clip: padding-box;
+}
+
+h2.cntnt {
+	background-clip: content-box;
+}
