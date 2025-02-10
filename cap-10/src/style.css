@@ -1,0 +1,45 @@
+div {
+	display: inline-block;
+	color: rgb(155, 0, 0);
+}
+
+.parent { 
+	align-content: center;
+	border: 
+	20px 
+	solid 
+	currentColor;
+	background-color: currentColor; 
+	height: 200px;
+	width: 400px;
+}
+
+.child { 
+	align-content:center;
+	background-color: white; 
+	height: 160px;
+	text-align: center;
+	width: 400px;
+}
+
+.child.semi-opaque-1 { 
+	opacity: 0.66; 
+}
+
+.child.semi-opaque-2 { 
+	opacity: 0.33; 
+}
+
+.box { 
+	background-image: url('omero.png'); 
+	background-repeat: round;
+}
+.text { 
+	background-color: white;
+}
+.opacity { 
+	opacity: 0.5;
+}
+.rgba { 
+	background-color: rgba(255,255,255,0.5); 
+}
