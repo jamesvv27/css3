@@ -1,0 +1,59 @@
+div {
+	display: inline-block;
+	height: 200px;
+	width: 450px;
+}
+
+.simple {
+	background-image: linear-gradient(black, white 75%, black);
+}
+
+.gradient-1 {
+	background-image: repeating-linear-gradient(to left, black, white, black 25%);
+}
+
+.gradient-2 {
+	background-image: repeating-linear-gradient(45deg, black, white 2px, black 10px);
+}
+
+.gradient-3 {
+	background-image: repeating-linear-gradient(315deg, black, black 2px, white 2px, white 4px);
+}
+
+.gradient-4 { 
+	background-image: radial-gradient(farthest-side circle, black, white, black); 
+}
+.gradient-5 { 
+	background-image: radial-gradient(farthest-side circle, black, white 25%, black); 
+}
+.gradient-6 { 
+	background-image: radial-gradient(farthest-side circle at left, white, black 25%, white 75%, black); 
+}
+.gradient-7 { 
+	background-image: radial-gradient(circle closest-side circle at 40% 50%, white, white 25%, black 50%, white 75%, black); 
+}
+
+.gradient-8 {
+	background-image: repeating-radial-gradient(circle farthest-corner at right top, black, white 10%, black 15%);
+}
+
+.gradient-9 { 
+	background-image: repeating-radial-gradient(circle farthest-corner at left, white, white 10px, black 15px); 
+}
+
+.gradient-10 {
+	background-image: repeating-radial-gradient(circle farthest-corner, white, black 1px, white 2px); 
+}
+
+.v-linear {
+	background-image:
+	linear-gradient(to right bottom, black, white 50%, transparent 50%),
+	linear-gradient(to left bottom, black, white 50%, black 50%);
+}
+
+.v-radial {
+	background-image:
+	radial-gradient(closest-side circle at 20% 50%, white, black 95%, transparent),
+	radial-gradient(closest-side circle at 50% 50%, white, black 95%, transparent),
+	radial-gradient(closest-side circle at 80% 50%, white, black 95%, transparent);
+}
