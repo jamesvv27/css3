@@ -5,10 +5,7 @@ div {
 
 .parent { 
 	align-content: center;
-	border: 
-	20px 
-	solid 
-	currentColor;
+	border: 20px solid currentColor;
 	background-color: currentColor; 
 	height: 200px;
 	width: 400px;
