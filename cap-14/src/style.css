@@ -1,9 +1,9 @@
 div.t {
 	background-color: rgb(100,100,100);
+	
 	border-color: rgb(70,70,70);
 	border-style: solid;
 	border-width: 10px;
-
 	
 	transition-property: width;
 	transition-duration: 0.7s;
@@ -46,6 +46,7 @@ div.a {
 	border-color: rgb(205, 100, 0, 0.5);
 	border-style: solid;
 	border-width: 3px;
+	
 	height: 150px;
 	width: 300px;
 }
