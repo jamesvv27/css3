@@ -129,7 +129,7 @@ white, white 25%, black 50%, white 75%, black);
 }
 ```
 
-### Repetir gradientes gradiales
+### Repetir gradientes radiales
 
 Se puede usar la función `repeating-radial-gradient()` para repetir los argumentos brindados hasta que se alcance el límite especificado en la última fuente de color.
 
