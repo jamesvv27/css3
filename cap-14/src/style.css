@@ -1,4 +1,4 @@
-div.t {
+div.transition {
 	background-color: rgb(100,100,100);
 	
 	border-color: rgb(70,70,70);
@@ -14,7 +14,7 @@ div.t {
 	width: 100px;
 }
 
-div.t:hover {
+div.transition:hover {
 	width: 170px;
 }
 
@@ -34,7 +34,7 @@ div.t:hover {
 	}
 }
 
-div.a {
+div.animation {
 	animation-name: expand;
 	animation-duration: 1s;
 	animation-timing-function: ease-in;
