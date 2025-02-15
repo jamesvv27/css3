@@ -4,12 +4,13 @@ div.t {
 	border-color: rgb(70,70,70);
 	border-style: solid;
 	border-width: 10px;
+
+	height: 80px;
 	
 	transition-property: width;
 	transition-duration: 0.7s;
 	transition-timing-function: ease;
 	
-	height: 80px;
 	width: 100px;
 }
 
