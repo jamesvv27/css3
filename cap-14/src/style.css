@@ -35,14 +35,14 @@ div.transition:hover {
 }
 
 div.animation {
-	animation-name: expand;
-	animation-duration: 1s;
-	animation-timing-function: ease-in;
 	animation-delay: 0s;
-	animation-iteration-count: infinite;
 	animation-direction: alternate;
+	animation-duration: 1s;
 	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-name: expand;
 	animation-play-state: running;
+	animation-timing-function: ease-in;
 	
 	border-color: rgb(205, 100, 0, 0.5);
 	border-style: solid;
