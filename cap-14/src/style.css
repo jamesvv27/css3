@@ -1,0 +1,53 @@
+div.transition {
+	background-color: rgb(100,100,100);
+	
+	border-color: rgb(70,70,70);
+	border-style: solid;
+	border-width: 10px;
+
+	height: 80px;
+	
+	transition-property: width;
+	transition-duration: 0.7s;
+	transition-timing-function: ease;
+	
+	width: 100px;
+}
+
+div.transition:hover {
+	width: 170px;
+}
+
+@keyframes expand {
+	0% {
+		background-color: rgb(255, 0, 0);
+		border-width: 4px;
+	}
+	50% { 
+		background-color: rgb(255, 255, 0, 0.7); 
+		border-width: 12px;
+	}
+	100% {
+		background-color: rgb(255, 0, 0);
+		border-width: 4px;
+
+	}
+}
+
+div.animation {
+	animation-delay: 0s;
+	animation-direction: alternate;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-name: expand;
+	animation-play-state: running;
+	animation-timing-function: ease-in;
+	
+	border-color: rgb(205, 100, 0, 0.5);
+	border-style: solid;
+	border-width: 3px;
+	
+	height: 150px;
+	width: 300px;
+}
