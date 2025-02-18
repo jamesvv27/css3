@@ -1,0 +1,32 @@
+li { 
+	font-size: 2rem;
+}
+
+img {
+	width: 350px;
+}
+
+div {
+	border-color: rgb(0 0 0);
+	border-style: solid;
+	border-width: 1px;
+}
+
+.min {
+	width: min-content;
+}
+
+.max {
+	width: max-content;
+}
+
+div.fill {
+	width: 600px;
+}
+
+p.fill {
+	border-color: rgb(255 255 0);
+	border-style: solid;
+	border-width: 2px;
+	width: fill;
+}
