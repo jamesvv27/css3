@@ -50,7 +50,7 @@ El valor del radio del blur debe ser un entero con una unidad de medida. Mientra
 
 ```css
 .one {
-	text-shadow: 3px 3px 3px ###BBB;
+	text-shadow: 3px 3px 3px #BBB;
 }
 .two {
 	text-shadow: 0 0 3px #000;
