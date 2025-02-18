@@ -1,0 +1,32 @@
+h1 { 
+	text-shadow: 3px 3px #BBB;
+}
+
+.one { 
+	text-shadow:
+		0 -2px 3px #FFF,
+		0 -4px 3px #AAA,
+		0 -6px 6px #666,
+		0 -8px 9px #000;
+}
+
+.two { 
+	color: #FFF;
+	text-shadow:
+		0 2px rgba(0,0,0,0.4),
+		0 4px rgba(0,0,0,0.4),
+		0 6px rgba(0,0,0,0.4),
+		0 8px 0 rgba(0,0,0,0.4); 
+}
+
+.three { 
+	text-shadow: -5px 0 #BBB;
+}
+
+p {
+	hyphens: auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-wrap: break-word;
+}
