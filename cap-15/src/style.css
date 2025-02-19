@@ -1,0 +1,44 @@
+div[class^='container'] {
+	border-color: rgb(0 0 0);
+	border-width: 4px;
+	border-style: solid;
+	display: flex;
+	height: 140px;
+	margin-top: 5px;
+	width: 650px;
+}
+
+.container-1 {
+	flex-direction: row-reverse;
+}
+
+.container-2 {
+	justify-content: flex-start;
+}
+
+.container-3 { 
+	justify-content: center; 
+}
+
+.container-4 { 
+	justify-content: space-around; 
+}
+
+div[class^='item-'] {
+	background-color: rgb(245 245 245);
+	border-color: white;
+	border-style: solid;
+	border-width: 1px;
+	height: 98.8%;
+	text-align: center;
+	width: 25%;
+}
+
+.item-b {
+	flex-grow: 3;
+}
+
+.item-bs {
+	color: rgb(255 0 0);
+	flex-shrink: 3;
+}
